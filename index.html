@@ -125,13 +125,32 @@
       transform: scale(1.05);
     }
 
-    footer {
-      margin-top: 4rem;
-      padding: 1rem;
+        footer {
+      position: relative;
+      padding: 2rem 1rem;
       font-size: 0.8rem;
-      background-color: rgba(0, 0, 0, 0.5);
       color: #f2f2f2;
-      text-align:center
+    }
+
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('images/mycelium_web.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+      z-index: -1;
+    }
+
+    .footer-text {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      display: inline-block;
+      border-radius: 6px;
     }
   </style>
 </head>
@@ -179,8 +198,10 @@
   </div>
 
   <footer>
-    © 2025 Oakenbrook Tales. All songs, stories, artwork, and characters are original creations and may not be reproduced without permission.<br>
-    This site is for informational and entertainment purposes only. For inquiries, email: contact [at] oakenbrooktales [dot] com
+    <div class="footer-text">
+      © 2025 Oakenbrook Tales. All songs, stories, artwork, and characters are original creations and may not be reproduced without permission.<br>
+      This site is for informational and entertainment purposes only. For inquiries, email: contact [at] oakenbrooktales [dot] com
+    </div>
   </footer>
 </body>
 </html>
