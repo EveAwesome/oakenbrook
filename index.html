@@ -16,17 +16,34 @@
     }
 
     header {
-      padding: 2rem 1rem 0 1rem;
-    }
-
-    header img {
-      max-width: 220px;
-      height: auto;
+      position: relative;
+      background-image: url('images/oakenbrook_web_bkgd.png');
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      background-color: rgba(255, 248, 236, 0.9);
+      color: #3a2f1d;
+      padding: 0.5rem 1rem;
       margin-top: 0.5rem;
+      font-size: 1.1rem;
+      border-radius: 4px;
+      display: inline-block;
     }
 
     .description {
@@ -69,10 +86,9 @@
 </head>
 <body>
   <header>
-    <img src="images/oakenbrook_web_bkgd.png" alt="Mother Mycelium logo" />
-    <h1>Oakenbrook Tales</h1>
+    <h1>OAKENBROOK TALES</h1>
+    <div class="subtitle">~ Songs and Stories for Children ~</div>
   </header>
-mother-mycelium-logo
   <div class="description">
     <p>
       Welcome to Oakenbrook, home to Mother Mycelium, a tiny, wise mushroom matron who lives in a cozy hollow at the base of an old oak tree. With the help of the Forest Children (gentle caretakers of flowers, trees, dew, and other natural wonders) Mother Mycelium shares original songs and stories inspired by the rhythm of the seasons, the magic of nature, and the joy of learning something new.
